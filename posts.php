@@ -33,18 +33,18 @@
                 </li>
             ';
         };
-    echo '</ul>';
     echo '
-        <div class="page-jump">
-            <div>
-                <i class="fas fa-chevron-left"></i>
-                <h4>Last 5</h4>
+            <div class="page-jump">
+                <div>
+                    <i class="fas fa-chevron-left"></i>
+                    <h5>Last 5</h5>
+                </div>
+                <div>
+                    <h5>Next 5</h5>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
-            <div>
-                <h4>Next 5</h4>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-        </div>
+        </ul>
     ';
 
     require('footer.php');

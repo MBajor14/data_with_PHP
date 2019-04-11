@@ -23,3 +23,8 @@
 .post-body{
     padding: 4px 4px 4px 12px;
 }
+
+.page-jump{
+    display: flex;
+    flex-direction: row;
+}
