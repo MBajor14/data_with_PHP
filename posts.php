@@ -16,7 +16,26 @@
 
     $stmt -> bind_result($name,$date,$title,$body);
 
-    while($stmt -> fetch()){
-        echo $name.' '.$date.' '.$title.' '.$body;
-    }
+
+    echo '<ul>';
+        while($stmt -> fetch()){
+            echo '
+                <li class="post">
+                    <div class="post-left">
+                        <h3>'.$title.'</h3>
+                        <h3>'.$name.'</h3>
+                        <h3>'.$date.'</h3>
+                    </div>
+                    <div class="post-right">
+                        <p>'.$body.'</p>
+                    </div>
+                </li>
+            ';
+        }
+    echo '</ul>';
+
+
+//    while($stmt -> fetch()){
+//        echo $name.' '.$date.' '.$title.' '.$body.'<br/>';
+//    }
 ?>
