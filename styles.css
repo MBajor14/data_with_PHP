@@ -32,5 +32,7 @@
 .page-jump>div{
     display: flex;
     flex-direction: row;
+}
+.page-jumper>div>a{
     text-decoration: none;
 }
