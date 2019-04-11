@@ -1,7 +1,7 @@
 #post-list{
     margin: 10px auto 0 auto;
     width: 55%;
-
+    font-size: 12px;
 }
 
 .post{
@@ -15,4 +15,5 @@
 
 .post-body{
     padding: 25px;
+    border: thick double black;
 }
