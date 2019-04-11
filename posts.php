@@ -19,7 +19,7 @@
     $stmt -> bind_result($name,$date,$title,$body);
 
 
-    echo '<div class="container"><ul id="post-list">';
+    echo '<ul id="post-list">';
         while($stmt -> fetch()){
             echo '
                 <li class="post">
@@ -34,7 +34,7 @@
                 </li>
             ';
         };
-    echo '</ul></div>';
+    echo '</ul>';
 
     require('footer.php');
 ?>
