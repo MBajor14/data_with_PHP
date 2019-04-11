@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: #957C23;
+    background-color: #FFCC99;
     border-radius: 6px;
     margin-bottom: 6px;
 }
@@ -36,9 +36,4 @@
 .page-jump>div>a{
     color: black;
     /*text-decoration: none;*/
-}
-
-
-.navbar{
-    background-color: #184967;
 }
