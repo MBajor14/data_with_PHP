@@ -27,4 +27,9 @@
 .page-jump{
     display: flex;
     flex-direction: row;
+    margin: auto auto;
+}
+.page-jump>div{
+    display: flex;
+    flex-direction: row;
 }
