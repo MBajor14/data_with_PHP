@@ -1,12 +1,12 @@
 .post-list{
     margin: auto auto;
     width: 50%;
-    border: 1px solid black;
 }
 
 .post{
     display: flex;
     flex-direction: row;
+    border: 1px solid black;
 }
 
 .post-left{

@@ -18,7 +18,7 @@
     $stmt -> bind_result($name,$date,$title,$body);
 
 
-    echo '<ul id="post-list">';
+    echo '<div class="container"><ul id="post-list">';
         while($stmt -> fetch()){
             echo '
                 <li class="post">
@@ -32,11 +32,8 @@
                     </div>
                 </li>
             ';
-        }
-    echo '</ul>';
+        };
+    echo '</ul></div>';
 
-
-//    while($stmt -> fetch()){
-//        echo $name.' '.$date.' '.$title.' '.$body.'<br/>';
-//    }
+    require('footer.php');
 ?>
