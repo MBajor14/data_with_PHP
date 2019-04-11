@@ -2,14 +2,15 @@
     padding: 25px;
     margin: auto auto;
     width: 40%;
-    background-color: #FFCC99;
-    border-radius: 6px;
+
 }
 
 .post{
     display: flex;
     flex-direction: column;
     padding: 25px;
+    background-color: #FFCC99;
+    border-radius: 6px;
 }
 
 .post-body{
