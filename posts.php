@@ -1,5 +1,6 @@
 <?php
 
+    require('header.php');
     require('../../safe/bajor_mysqli_connect.php');
 
     $query = "
