@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">POST$!!!</a>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a href="#" class="nav-link">Add Post</a>
