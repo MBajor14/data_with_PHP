@@ -9,7 +9,7 @@
 .post{
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 10px;
     background-color: #FFCC99;
     border-radius: 6px;
     margin-bottom: 6px;
@@ -19,7 +19,5 @@
 }
 
 .post-body{
-    padding: 10px;
-    border: thick double black;
-    border-radius: 6px;
+    padding: 4px;
 }
