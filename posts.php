@@ -24,9 +24,9 @@
             echo '
                 <li class="post">
                     <div class="post-left">
-                        <h3>'.$title.'</h3>
-                        <h3>'.$name.'</h3>
-                        <h3>'.$date.'</h3>
+                        <div class="post-left-field">'.$title.'</div>
+                        <div class="post-left-field">'.$name.'</div>
+                        <div class="post-left-field">'.$date.'</div>
                     </div>
                     <div class="post-right">
                         <p>'.$body.'</p>
