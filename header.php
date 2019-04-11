@@ -10,9 +10,9 @@
     <title>Data With PHP</title>
 </head>
 <body>
-    <nav class="navbar navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">POST$!!!</a>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a href="#" class="nav-link">Add Post</a>
             </li>
