@@ -23,15 +23,13 @@
         while($stmt -> fetch()){
             echo '
                 <li class="post">
-                    <div class="post-left">
-                        <div class="post-left-field">'.$title.'</div>
-                        <div class="post-left-field">'.$name.'</div>
-                        <div class="post-left-field">'.$date.'</div>
-                        <a href="">Comments</a>
-                    </div>
-                    <div class="post-right">
+                    <div>'.$title.'</div>    
+                    <div>Submitted by '.$name.' on '.$date.'</div>
+                    <div class="posts-body">
                         <p>'.$body.'</p>
                     </div>
+                    <a href="">Comments</a>
+                    
                 </li>
             ';
         };

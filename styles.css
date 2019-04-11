@@ -1,25 +1,11 @@
 #post-list{
     margin: auto auto;
     width: 40%;
+    background-color: rgb(200,200,200);
 }
 
 .post{
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-}
-
-.post-left{
-    flex: 1 1;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.post-left-field{
-
-}
-
-.post-right{
-    flex: 4 4;
+    border: 1px solid black;
 }
