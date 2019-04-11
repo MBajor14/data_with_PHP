@@ -19,7 +19,7 @@
 }
 
 .post-body{
-    padding: 25px;
-    border: thick double black;
+    padding: 10px;
+    border: 1px double black;
     border-radius: 6px;
 }
