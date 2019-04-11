@@ -36,12 +36,12 @@
     echo '
             <div class="page-jump">
                 <div>
-                    <i class="<i class="fas fa-long-arrow-alt-left"></i>"></i>
+                    <i class="fas fa-long-arrow-alt-left"></i>
                     <h5>Last 5</h5>
                 </div>
                 <div>
                     <h5>Next 5</h5>
-                    <i class="<i class="fas fa-long-arrow-alt-right"></i>"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
         </ul>
