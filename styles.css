@@ -3,7 +3,7 @@
     padding: 15px 30px;
     width: 55%;
     font-size: 12px;
-    background-color: #234395;
+    background-color: #3092CF;
     border-bottom-left-radius:6px;
     border-bottom-right-radius:6px;
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: #FFE5CC;
+    background-color: #98C7E7;
     border-radius: 6px;
     margin-bottom: 6px;
 }
@@ -40,5 +40,5 @@
 
 
 .navbar{
-    background-color: #236995;
+    background-color: #184967;
 }
