@@ -27,6 +27,7 @@
                         <div class="post-left-field">'.$title.'</div>
                         <div class="post-left-field">'.$name.'</div>
                         <div class="post-left-field">'.$date.'</div>
+                        <a href="">Comments</a>
                     </div>
                     <div class="post-right">
                         <p>'.$body.'</p>

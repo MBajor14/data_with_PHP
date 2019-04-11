@@ -10,7 +10,7 @@
     <title>Data With PHP</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">PO$T!</a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
