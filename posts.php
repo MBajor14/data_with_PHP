@@ -37,10 +37,10 @@
             <div class="page-jump">
                 <div>
                     <i class="fas fa-long-arrow-alt-left"></i>
-                    <h5>Last 5</h5>
+                    <a href="">Last 5</a>
                 </div>
                 <div>
-                    <h5>Next 5</h5>
+                    <a href="">Next 5</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
