@@ -17,7 +17,7 @@
     $stmt -> bind_result($name,$date,$title,$body);
 
 
-    echo '<ul>';
+    echo '<ul id="post-list">';
         while($stmt -> fetch()){
             echo '
                 <li class="post">
