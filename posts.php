@@ -25,7 +25,7 @@
                 <li class="post">
                     <div>'.$title.'</div>    
                     <div>Submitted by '.$name.' on '.$date.'</div>
-                    <div class="posts-body">
+                    <div class="post-body">
                         <p>'.$body.'</p>
                     </div>
                     <a href="">Comments</a>
