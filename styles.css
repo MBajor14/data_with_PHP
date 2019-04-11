@@ -1,5 +1,6 @@
 #post-list{
-    margin: 10px auto 0 auto;
+    margin: auto auto;
+    padding: 0;
     width: 55%;
     font-size: 12px;
     background-color: #95826F;
