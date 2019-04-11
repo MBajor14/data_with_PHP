@@ -10,5 +10,17 @@
     <title>Data With PHP</title>
 </head>
 <body>
-    <h1>Header</h1>
-
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Add Post</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </nav>
