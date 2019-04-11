@@ -34,6 +34,18 @@
             ';
         };
     echo '</ul>';
+    echo '
+        <div class="page-jump">
+            <div>
+                <i class="fas fa-chevron-left"></i>
+                <h4>Last 5</h4>
+            </div>
+            <div>
+                <h4>Next 5</h4>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    ';
 
     require('footer.php');
 ?>
