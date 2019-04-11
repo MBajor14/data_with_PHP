@@ -16,4 +16,5 @@
 .post-body{
     padding: 25px;
     border: thick double black;
+    border-radius: 6px;
 }
