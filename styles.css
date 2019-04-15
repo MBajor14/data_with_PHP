@@ -4,8 +4,6 @@
     width: 55%;
     font-size: 12px;
     background-color: #953023;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius:6px;
 }
 
 .post{
@@ -39,6 +37,7 @@
 }
 
 .footer{
+    text-align: center;
     height: 40px;
-    background-color: saddlebrown;
+    background-color: #343a40;
 }
