@@ -11,21 +11,19 @@
     <title>Data With PHP</title>
 </head>
 <body>
-    <navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">PO$T!</a>
-        <nav>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Add Post</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Login</a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Logout</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Add Post</a>
             </li>
-        </nav>
-    </navbar>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Logout</a>
+        </li>
+    </nav>
