@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bajor
- * Date: 5/18/19
- * Time: 9:54 AM
- */
+    require('header.php');
+
+    echo '
+        <h1>Testing Login</h1>
+    ';
+
+    require('footer.php');
+?>
