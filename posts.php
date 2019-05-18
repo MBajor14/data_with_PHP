@@ -1,4 +1,5 @@
 <?php
+    echo '<div class="page-minus-footer">';
 
     require('header.php');
     require('../../safe/bajor_mysqli_connect.php');
@@ -47,5 +48,6 @@
         </ul>
     ';
 
+    echo '</div>';
     require('footer.php');
 ?>
