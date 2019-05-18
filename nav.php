@@ -2,7 +2,7 @@
     <a class="navbar-brand" href="#">PO$T!</a>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a href="#" class="nav-link">Add Post</a>
+            <a href="posts.php" class="nav-link">Add Post</a>
         </li>
         <li class="nav-item">
             <a href="login.php" class="nav-link">Login</a>
