@@ -2,8 +2,8 @@
     require('header.php');
 
     if(isset($_GET['logout'])){
-        if($_GET['logout'] === true){
-            echo "<script type='text/javascript'>alert('user has logged out');</script>";
+        if($_GET['logout'] == true){
+            echo 'logout!';
         }
     }
 
