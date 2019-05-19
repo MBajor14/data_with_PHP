@@ -1,7 +1,7 @@
 <?php
 
-    require_once('header.php');
-    require_once('../../safe/bajor_mysqli_connect.php');
+    require('header.php');
+    require('../../safe/bajor_mysqli_connect.php');
 
 
     if(isset($_GET['page'])){

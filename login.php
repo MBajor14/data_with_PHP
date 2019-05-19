@@ -3,8 +3,8 @@
 
 
     if(isset($_POST['login']) ){
-        require_once('../../safe/bajor_mysqli_connect.php');
-        require_once('sanitize.php');
+        require('../../safe/bajor_mysqli_connect.php');
+        require('sanitize.php');
 
         if(isset($_POST['email']))
             $email = $_POST['email'];
@@ -40,7 +40,6 @@
                     WHERE u.email = 'kenny@email.com';
                 ";
 
-            echo $query;
 
             $stmt = $dbc -> prepare($query);
 //            $stmt -> bind_param('s',$email);
