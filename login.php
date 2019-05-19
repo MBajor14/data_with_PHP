@@ -35,7 +35,7 @@
             }
 
             $query = "
-                    SELECT u.name, u.email, u.password 
+                    SELECT u.user_id, u.name, u.email, u.password 
                     FROM users AS u
                     WHERE u.email = 'kenny@email.com';
                 ";
@@ -52,8 +52,8 @@
 
             if($query_email === $email){
                 session_start();
-                $_SESSION['email'] = $query_email;
-                $_SESSION['name'] = $query_name;
+                echo session_id();
+                $_SESSION['id'] = $query_email;
                 header ("Location: posts.php?login=success");
                 exit();
             }
