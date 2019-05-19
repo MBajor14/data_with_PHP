@@ -38,7 +38,6 @@
             echo "testing email query: ".$query_email;
 
             if($query_email === $email && $query_password === $password){
-                session_start();
                 $_SESSION['id'] = $query_id;
                 header ("Location: posts.php?login=success");
                 exit();
