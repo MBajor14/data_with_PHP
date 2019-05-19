@@ -13,8 +13,9 @@
 <?php
 
     $loggedIn = false;
-    if(isset($_SESSION['email'])) {
+    if(isset($_SESSION['id'])) {
         $loggedIn = true;
+        echo session_id();
     }
 
     echo '<div class="page-minus-footer">';
