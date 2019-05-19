@@ -30,7 +30,7 @@
                 ';
 
             $stmt = $dbc -> prepare($query);
-            $stmt -> bind_param('s',$email);
+//            $stmt -> bind_param('s',$email);
             $stmt -> execute();
             $stmt -> store_result();
             $stmt -> bind_result($query_name,$query_email,$query_password);
