@@ -9,7 +9,7 @@
 
         if(empty($title) || empty($body))    {
             $error = 'Please fill out all the fields to add post';
-            header("Location: login.php?error=".$error);
+            header("Location: addPost.php?error=".$error);
             exit();
         }
     }
@@ -19,7 +19,7 @@
         echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
     }
 ?>
-    <form method="post" action="addPosts.php">
+    <form method="post" action="addPost.php">
       <div class="form-group">
         <label for="title">Post Title</label>
         <input type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Title..." name="title">
