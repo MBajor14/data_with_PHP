@@ -20,7 +20,7 @@
     ";
 
     $stmt = $dbc -> prepare($query);
-    $stmt -> bind_param($startPosition);
+    $stmt -> bind_param('i',$startPosition);
     $stmt -> execute();
     $stmt -> store_result();
     $stmt -> bind_result($name,$date,$title,$body);
