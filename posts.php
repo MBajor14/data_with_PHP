@@ -25,7 +25,6 @@
     $stmt -> store_result();
     $stmt -> bind_result($name,$date,$title,$body);
     $itemsReturned = $stmt -> num_rows;
-    $stmt -> close(); // close database connection
 
 
     echo '<ul id="post-list">';
@@ -67,4 +66,6 @@
     echo '</div>';
 
     require('footer.php');
+
+    $stmt -> close(); // close database connection
 ?>
