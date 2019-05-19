@@ -47,6 +47,11 @@
                 header ("Location: posts.php?login=success");
                 exit();
             }
+            else{
+                $error = 'This email and password pair is not valid';
+                header("Location: login.php?error=".$error);
+                exit();
+            }
 
         }
         $stmt -> close();

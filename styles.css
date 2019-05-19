@@ -60,3 +60,7 @@ form{
     margin: 30px auto 0 auto;
     width: 30%;
 }
+
+.alert{
+    text-align: center;
+}
