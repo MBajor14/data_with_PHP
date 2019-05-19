@@ -25,7 +25,7 @@
             $query = "
                     SELECT u.name, u.email, u.password 
                     FROM users AS u
-                    WHERE email = ?
+                    WHERE u.email = ?
                 ";
 
             $stmt = $dbc -> prepare($query);
