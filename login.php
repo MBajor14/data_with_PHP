@@ -21,17 +21,16 @@
         }
 
         else{
-            echo 'ran else statement';
             $query_email = 'empty';
             if(isset($_POST['login'])){
                 echo '
                     <h3>Login ran</h3>
                 ';
                 if(isset($_POST['email'])){
-                    echo $email;
+                    echo '<h5>'.$email.'</h5>';
                 }
                 if(isset($_POST['password'])){
-                    echo $password;
+                    echo '<h5>'.$password.'</h5>';
                 }
             }
 
