@@ -32,7 +32,7 @@
 .page-jump{
     display: flex;
     flex-direction: row;
-    margin: auto auto;
+    margin: 0;
     text-align: center;
 }
 .page-jump>div{
