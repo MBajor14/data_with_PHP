@@ -1,7 +1,14 @@
 <?php
 
-    require('header.php');
-    require('../../safe/bajor_mysqli_connect.php');
+    require_once('header.php');
+    require_once('../../safe/bajor_mysqli_connect.php');
+
+    session_start();
+    if (!isset($_SESSION['email']) || empty($_SESSION['email'])) {
+        // redirect to your login page
+        exit();
+    }
+    $username = $_SESSION['email'];
 
     if(isset($_GET['page'])){
         $startPosition = ($_GET['page'] -1) * 5;
