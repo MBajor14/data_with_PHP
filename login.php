@@ -54,7 +54,8 @@
                 session_start();
                 $_SESSION['email'] = $query_email;
                 $_SESSION['name'] = $query_name;
-                header ("Location: posts.php?login=success");
+//                header ("Location: posts.php?login=success");
+                header ("Location: login.php");
                 exit();
             }
 
