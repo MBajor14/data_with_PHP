@@ -37,7 +37,7 @@
             $query = '
                     SELECT *
                     FROM users
-                    WHERE email = kenny@email.com;
+                    WHERE email = "kenny@email.com";
                 ';
 
             $stmt = $dbc -> prepare($query);
