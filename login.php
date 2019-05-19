@@ -1,7 +1,7 @@
 <?php
     require('header.php');
 
-    if(isset($_POST["login"]) ){
+    if(isset($_POST['login']) ){
         require_once('../../safe/bajor_mysqli_connect.php');
         require_once('sanitize.php');
 
@@ -53,8 +53,14 @@
 
     if(isset($_POST['login'])){
         echo '
-            <h1>Login ran</h1>
+            <h3>Login ran</h3>
         ';
+        if(isset($_POST['email'])){
+            echo $email;
+        }
+        if(isset($_POST['password'])){
+            echo $password;
+        }
     }
     ?>
 
