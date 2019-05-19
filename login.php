@@ -20,6 +20,8 @@
         }
 
         else{
+            echo 'ran else statement';
+
             $query = "
                     SELECT u.name, u.email, u.password 
                     FROM users AS u
