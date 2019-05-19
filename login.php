@@ -37,11 +37,11 @@
             $query = '
                     SELECT *
                     FROM users
-                    WHERE email = ?;
+                    WHERE email = kenny@email.com;
                 ';
 
             $stmt = $dbc -> prepare($query);
-            $stmt -> bind_param('s',$email);
+//            $stmt -> bind_param('s',$email);
             $stmt -> execute();
             $stmt -> store_result();
             $result = $stmt -> get_result();
