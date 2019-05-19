@@ -34,6 +34,8 @@
                 </li>
             ';
         };
+    echo '</div>';
+
     echo '
             <div class="page-jump">
                 <div>
@@ -48,6 +50,5 @@
         </ul>
     ';
 
-    echo '</div>';
     require('footer.php');
 ?>
