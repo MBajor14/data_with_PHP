@@ -26,11 +26,11 @@
             $query = '
                     SELECT u.name, u.email, u.password 
                     FROM users AS u
-                    WHERE u.email="kenny@email.com";
+                    WHERE u.email = ?;
                 ';
 
             $stmt = $dbc -> prepare($query);
-//            $stmt -> bind_param('s',$email);
+            $stmt -> bind_param('s',$email);
             $stmt -> execute();
             $stmt -> store_result();
             $stmt -> bind_result($query_name,$query_email,$query_password);
@@ -50,7 +50,7 @@
     }
 
 
-    if(isset($_POST['error'])){
+    if(isset($_GET['error'])){
         echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
     }
 
