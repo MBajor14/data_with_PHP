@@ -3,7 +3,7 @@
     require('header.php');
     require('../../safe/bajor_mysqli_connect.php');
 
-    if(isset($_SESSION['email'])) {
+    if(isset($_SESSION['id'])) {
         echo 'session set';
     }
 

@@ -40,9 +40,8 @@
             if($query_email === $email && $query_password === $password){
                 session_start();
                 $_SESSION['id'] = $query_id;
-                echo $_SESSION['id'];
-//                header ("Location: posts.php?login=success");
-//                exit();
+                header ("Location: posts.php?login=success");
+                exit();
             }
 
         }
