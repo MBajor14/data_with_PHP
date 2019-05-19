@@ -34,7 +34,7 @@
                 </li>
             ';
         };
-    echo '</div>';
+    echo '</ul>';
 
     echo '
             <div class="page-jump">
@@ -47,8 +47,8 @@
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
-        </ul>
     ';
 
+    echo '</div>';
     require('footer.php');
 ?>
