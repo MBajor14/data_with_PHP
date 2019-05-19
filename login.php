@@ -40,6 +40,8 @@
                     WHERE u.email = 'kenny@email.com';
                 ";
 
+            echo $query;
+
             $stmt = $dbc -> prepare($query);
 //            $stmt -> bind_param('s',$email);
             $stmt -> execute();
