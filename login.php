@@ -46,6 +46,7 @@
             $stmt -> execute();
             $stmt -> store_result();
             $stmt -> bind_result($query_name,$query_email, $query_password);
+            $stmt -> fetch();
 
             echo "testing email query: ".$query_email;
 
