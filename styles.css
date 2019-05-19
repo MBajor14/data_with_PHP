@@ -34,6 +34,9 @@
     flex-direction: row;
     margin: 0 auto;
     text-align: center;
+    background-color: #953023;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .page-jump>div{
     display: flex;
