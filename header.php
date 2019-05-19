@@ -11,6 +11,7 @@
     <title>Data With PHP</title>
 </head>
 <?php
+    session_start();
 
     $loggedIn = false;
     if(isset($_SESSION['id'])) {
