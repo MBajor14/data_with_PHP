@@ -50,7 +50,7 @@
         echo '
                 <div>
                     <i class="fas fa-long-arrow-alt-left"></i>
-                    <a href="posts.php?page=$previousPage">Last 5</a>
+                    <a href=\"posts.php?page=$previousPage\">Last 5</a>
                 </div>
         ';
     }
