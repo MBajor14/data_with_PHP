@@ -1,27 +1,66 @@
 <?php
     require('header.php');
-    require_once('sanitize.php');
 
-    $emailError = $passwordError = "";
+    if(isset($_POST["login"]) ){
+        require_once('../../safe/bajor_mysqli_connect.php');
+        require_once('sanitize.php');
 
-    //check to see if any errors occur during login
-    if(isset($_GET['email']) || isset($_GET['password']) || isset($_GET['error'])){
-        $emailError = "Please enter correct username.";
-        $passwordError = "Please enter correct password.";
+        if(isset($_POST['email']))
+            $email = $_POST['email'];
+        if(isset($_POST['password']))
+            $password = $_POST['password'];
+
+        $email = sanitize($email);
+        $password = sanitize($password);
+
+        if(empty($email) || empty($password))    {
+            $error = 'Please fill out all the fields in the login form';
+            header("Location: login.php?error=".$error);
+            exit();
+        }
+
+        else{
+            $query = "
+                    SELECT u.name, u.email, u.password 
+                    FROM users AS u
+                    WHERE email = ?
+                ";
+
+            $stmt = $dbc -> prepare($query);
+            $stmt -> bind_param('s',$email);
+            $stmt -> execute();
+            $stmt -> store_result();
+            $stmt -> bind_result($query_name,$query_email,$query_password);
+
+
+            if($query_email === $email){
+                session_start();
+                $_SESSION['email'] = $query_email;
+                $_SESSION['name'] = $query_name;
+                header ("Location: posts.php?login=success");
+                exit();
+            }
+
+        }
+        $stmt -> close();
     }
-?>
 
-    <form method="post" action="processLogin.php">
+
+    if(isset($_POST['error'])){
+        echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
+    }
+    ?>
+
+    <form method="post" action="login.php">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-        <p class="username-error"><?php if(!empty($emailError)) echo $emailError ?></p>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password" name="password">
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button name="login" type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 <?php

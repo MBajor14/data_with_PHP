@@ -13,7 +13,6 @@
 <?php
 
     $loggedIn = false;
-    session_start();
     if(isset($_SESSION['email'])) {
         $loggedIn = true;
     }
