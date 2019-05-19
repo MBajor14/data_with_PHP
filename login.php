@@ -23,6 +23,17 @@
         else{
             echo 'ran else statement';
             $query_email = 'empty';
+            if(isset($_POST['login'])){
+                echo '
+                    <h3>Login ran</h3>
+                ';
+                if(isset($_POST['email'])){
+                    echo $email;
+                }
+                if(isset($_POST['password'])){
+                    echo $password;
+                }
+            }
 
             $query = '
                     SELECT u.name, u.email, u.password 
@@ -56,18 +67,6 @@
         echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
     }
 
-
-    if(isset($_POST['login'])){
-        echo '
-            <h3>Login ran</h3>
-        ';
-        if(isset($_POST['email'])){
-            echo $email;
-        }
-        if(isset($_POST['password'])){
-            echo $password;
-        }
-    }
     ?>
 
     <form method="post" action="login.php">
