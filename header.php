@@ -11,5 +11,6 @@
     <title>Data With PHP</title>
 </head>
 <?php
+    echo '<div class="page-minus-footer">';
     require('nav.php');
 ?>

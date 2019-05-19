@@ -1,5 +1,4 @@
 <?php
-    echo '<div class="page-minus-footer">';
     require('header.php');
 
     echo '
@@ -16,6 +15,5 @@
         </form>
     ';
 
-    echo '</div>';
     require('footer.php');
 ?>
