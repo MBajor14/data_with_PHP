@@ -3,6 +3,7 @@
     require('header.php');
     require('../../safe/bajor_mysqli_connect.php');
 
+    if(isset($_SESSION['email'])) echo $_SESSION['email'];
 
     if(isset($_GET['page'])){
         $startPosition = ($_GET['page'] -1) * 5;
