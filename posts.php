@@ -50,13 +50,13 @@
         echo '
                 <div>
                     <i class="fas fa-long-arrow-alt-left"></i>
-                    <a href="posts.php?page=$nextPage">Last 5</a>
+                    <a href="posts.php?page=$previousPage">Last 5</a>
                 </div>
         ';
     }
     echo '
                 <div>
-                    <a href="posts.php?page=$previousPage">Next 5</a>
+                    <a href="posts.php?page=$nextPage">Next 5</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
