@@ -1,6 +1,7 @@
 <?php
     require('header.php');
 
+
     if(isset($_POST['login']) ){
         require_once('../../safe/bajor_mysqli_connect.php');
         require_once('sanitize.php');
@@ -51,6 +52,7 @@
 
 
     if(isset($_GET['error'])){
+        $error = $_GET['error'];
         echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
     }
 
