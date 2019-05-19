@@ -21,6 +21,7 @@
 
         else{
             echo 'ran else statement';
+            $query_email = 'empty';
 
             $query = "
                     SELECT u.name, u.email, u.password 
@@ -34,9 +35,7 @@
             $stmt -> store_result();
             $stmt -> bind_result($query_name,$query_email,$query_password);
 
-            if(isset($query_email)){
-                echo $query_email;
-            }
+            echo "testing email query: ".$query_email;
 
             if($query_email === $email){
                 session_start();
