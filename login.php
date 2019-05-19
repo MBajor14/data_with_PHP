@@ -1,6 +1,11 @@
 <?php
     require('header.php');
 
+    if(isset($_GET['logout'])){
+        if($_GET['logout'] === true){
+            echo "<script type='text/javascript'>alert('user has logged out');</script>";
+        }
+    }
 
     if(isset($_POST['login']) ){
         require('../../safe/bajor_mysqli_connect.php');
