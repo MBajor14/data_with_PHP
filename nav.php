@@ -5,7 +5,7 @@
             <a href="posts.php" class="nav-link">Add Post</a>
         </li>
         <?php
-            if($loggedIn){
+            if(!$loggedIn){
                 echo '
                         <li class="nav-item">
                             <a href="login.php" class="nav-link">Login</a>
