@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>Data With PHP</title>
 </head>
-<body>
 <?php
 
     $loggedIn = false;
