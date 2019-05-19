@@ -35,23 +35,23 @@
             }
 
             $query = "
-                    SELECT *
-                    FROM users
-                    WHERE email = 'kenny@email.com';
+                    SELECT u.name, u.email, u.password 
+                    FROM users AS u
+                    WHERE u.email = 'kenny@email.com';
                 ";
 
             $stmt = $dbc -> prepare($query);
-//            $stmt -> bind_param('s',$email);
+            $stmt -> bind_param('s',$email);
             $stmt -> execute();
             $stmt -> store_result();
-            $result = $stmt -> get_result();
+            $stmt -> bind_result($query_name,$query_email, $query_password);
 
+            echo "testing email query: ".$query_email;
 
-            if($row = $result -> fetch_assoc()){
+            if($query_email === $email){
                 session_start();
-                echo '<h5>$row[\'email\']</h5>';
-                $_SESSION['email'] = $row['email'];
-                $_SESSION['name'] = $row['name'];
+                $_SESSION['email'] = $query_email;
+                $_SESSION['name'] = $query_name;
                 header ("Location: posts.php?login=success");
                 exit();
             }
