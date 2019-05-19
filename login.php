@@ -49,6 +49,13 @@
     if(isset($_POST['error'])){
         echo "<div class='alert alert-warning msg' role='alert'>$error</div>";
     }
+
+
+    if(isset($_POST['login'])){
+        echo '
+            <h1>Login ran</h1>
+        ';
+    }
     ?>
 
     <form method="post" action="login.php">
