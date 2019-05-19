@@ -1,11 +1,3 @@
-<?php
-    $loggedIn = false;
-    session_start();
-    if(isset($_SESSION['email'])) {
-        $loggedIn = true;
-    }
-?>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="posts.php">PO$T!</a>
     <ul class="navbar-nav mr-auto">

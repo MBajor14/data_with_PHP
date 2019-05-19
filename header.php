@@ -11,6 +11,13 @@
     <title>Data With PHP</title>
 </head>
 <?php
+
+    $loggedIn = false;
+    session_start();
+    if(isset($_SESSION['email'])) {
+        $loggedIn = true;
+    }
+
     echo '<div class="page-minus-footer">';
     require('nav.php');
 ?>
