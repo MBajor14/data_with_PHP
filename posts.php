@@ -24,6 +24,7 @@
     $stmt -> execute();
     $stmt -> store_result();
     $stmt -> bind_result($name,$date,$title,$body);
+    $itemsReturned = $stmt -> num_rows;
 
 
     echo '<ul id="post-list">';
@@ -54,13 +55,15 @@
                 </div>
         ';
     }
-    echo '
+    if($itemsReturned === 5){
+        echo '
                 <div>
                     <a href="posts.php?page='.$nextPage.'">Next 5</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
-            </div>
-    ';
+        ';
+    }
+    echo '</div>';
 
     require('footer.php');
 ?>
