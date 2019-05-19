@@ -37,12 +37,12 @@
             $query = "
                     SELECT u.user_id, u.email, u.password 
                     FROM users AS u
-                    WHERE u.email = 'kenny@email.com';
+                    WHERE u.email = ?;
                 ";
 
 
             $stmt = $dbc -> prepare($query);
-//            $stmt -> bind_param('s',$email);
+            $stmt -> bind_param('s',$email);
             $stmt -> execute();
             $stmt -> store_result();
             $stmt -> bind_result($query_id,$query_email, $query_password);
@@ -50,10 +50,9 @@
 
             echo "testing email query: ".$query_email;
 
-            if($query_email === $email){
+            if($query_email === $email && $query_password === $password){
                 session_start();
-                echo session_id();
-                $_SESSION['id'] = $query_email;
+                $_SESSION['id'] = $query_id;
                 header ("Location: posts.php?login=success");
                 exit();
             }
