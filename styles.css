@@ -24,13 +24,13 @@
 
 .page-minus-footer{
     min-height: 100vh;
-    margin: 0 0 -40px 0;
 }
 
 .page-jump{
     display: flex;
     flex-direction: row;
     margin: auto auto;
+    flex: 1 1;
 }
 .page-jump>div{
     display: flex;
