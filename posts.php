@@ -56,7 +56,7 @@
     }
     echo '
                 <div>
-                    <a href="posts.php?page=$nextPage">Next 5</a>
+                    <a href="posts.php?page='.$nextPage.'">Next 5</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
