@@ -2,6 +2,8 @@
     require('header.php');
 
     if(isset($_POST['addPost'])){
+        require('../../safe/bajor_mysqli_connect.php');
+        require('sanitize.php');
 
         $userID = $_SESSION['id'];
 
