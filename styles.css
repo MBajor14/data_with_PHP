@@ -64,3 +64,8 @@ form{
 .alert{
     text-align: center;
 }
+
+.post_title{
+    font-weight: bold;
+    color: #ffffff;
+}
