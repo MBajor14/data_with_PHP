@@ -33,7 +33,7 @@
         while($stmt -> fetch()){
             echo '
                 <li class="post">
-                    <h4 class="post_title">'.$title.'</h4>    
+                    <h5 class="post_title">'.$title.'</h5>    
                     <div>Submitted by '.$name.' on '.$date.'</div>
                     <div class="post-body">
                         <p>'.$body.'</p>
