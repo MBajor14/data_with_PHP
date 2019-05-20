@@ -2,15 +2,38 @@
     require('header.php');
 
     if(isset($_POST['addPost'])){
-        if(isset($_POST['title']) && isset($_POST['body'])){
+
+        $userID = $_SESSION['id'];
+
+        if(isset($_POST['title'])){
             $title = $_POST['title'];
+        }
+        if(isset($_POST['body'])){
             $body = $_POST['body'];
         }
+
+        $title = sanitize($title);
+        $body = sanitize($body);
 
         if(empty($title) || empty($body))    {
             $error = 'Please fill out all the fields to add post';
             header("Location: addPost.php?error=".$error);
             exit();
+        }
+        else{
+            $query = "
+                    INSERT INTO posts(title,body,user_id)
+                    VALUES (?,?,?) 
+                ";
+
+
+            $stmt = $dbc -> prepare($query);
+            $stmt -> bind_param('ssi',$title, $body, $userID);
+            $stmt -> execute();
+            $stmt -> store_result();
+            $stmt -> close();
+
+            header("Location: posts.php");
         }
     }
 

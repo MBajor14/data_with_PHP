@@ -40,7 +40,6 @@
             $stmt -> bind_result($query_id,$query_email, $query_password);
             $stmt -> fetch();
 
-            echo "testing email query: ".$query_email;
 
             if($query_email === $email && $query_password === $password){
                 $_SESSION['id'] = $query_id;
