@@ -14,10 +14,10 @@
     }
 
     $query = "
-        SELECT u.name, p.date_time, p.title, p.body 
+        SELECT u.name, p.date_time, p.title, p.body
         FROM users AS u, posts AS p 
         WHERE u.user_id=p.user_id
-        ORDER BY 
+        ORDER BY p.date_time
         LIMIT ?,5;
     ";
 
