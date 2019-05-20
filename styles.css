@@ -1,3 +1,9 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 #post-list{
     margin: 0 auto;
     padding: 15px 30px;
@@ -23,9 +29,7 @@
 }
 
 .page-minus-footer{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    flex: 1 1;
 }
 
 .page-jump{
@@ -66,4 +70,8 @@ form{
 
 .post_title{
     font-weight: bold;
+}
+
+.page-container{
+
 }
